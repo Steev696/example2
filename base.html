@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consulta de Datos</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Consulta de Estudiantes</h2>
+
+        <form id="consulta-id-form" action="#" method="GET">
+            <label for="estudiante-id">Ingrese ID del Estudiante:</label><br />
+            <input type="number" id="estudiante-id" name="estudiante-id" required />
+            <button type="submit">Buscar por ID</button>
+        </form>
+
+        <br />
+
+        <form id="consulta-todos-form" action="#" method="GET">
+            <button type="submit">Mostrar Todos los Estudiantes</button>
+        </form>
+
+        <div id="resultado" style="margin-top: 20px;">
+            <!-- Aquí se mostrarían los resultados -->
+        </div>
+        <button onclick="window.location.href='index.html'">Regresar al Inicio</button>
+    </div>
+    
+</body>
+</html>

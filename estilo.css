@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #e8ebee;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #222;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 18px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form select:focus {
+    border-color: #004080;
+    outline: none;
+}
+
+form input[type="radio"] {
+    margin-right: 6px;
+}
+
+form button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+form button:hover,
+button:hover {
+    background-color: #003366;
+}
+
+button {
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #004080;
+    color: white;
+    transition: background-color 0.25s ease;
+}
+
+button:focus,
+form button:focus {
+    outline: 2px solid #003366;
+    outline-offset: 2px;
+}
+
+#resultado,
+#reporte {
+    background-color: #e9f0fb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    min-height: 100px;
+    font-size: 1rem;
+    color: #222;
+}
+
+/* Header y footer (solo para index.html) */
+.header {
+    background-color: #004080;
+    color: white;
+    padding: 25px 40px;
+    text-align: center;
+}
+
+.header h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.paginas ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 12px;
+}
+
+.paginas a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.paginas a:hover {
+    background-color: #003366;
+}
+
+.container.index-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+#derecho {
+    flex: 2;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #222;
+}
+
+#izquierod {
+    flex: 1;
+}
+
+#izquierod img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    font-weight: 600;
+    margin-top: auto;
+    font-size: 1rem;
+}
